@@ -7,19 +7,19 @@ debil_est = False
 #Проверка на выход за рамки, а также поиск количества ответов у победителя
 for pobeda in balls1:
     if int(pobeda) >= 20 and int(pobeda) != 20:
-        print("EROR")
+        print("ERROR")
         winner = 0
         break
     if int(pobeda) <= 1 and int(pobeda) != 1:
-        print("EROR")
+        print("ERROR")
         winner = 0
         break
     if int(uchastniki) <= 1 and int(uchastniki) != 1:
-        print("EROR")
+        print("ERROR")
         winner = 0
         break
     if int(uchastniki) >= 50 and int(uchastniki) != 50:
-        print("EROR")
+        print("ERROR")
         winner = 0
         break
     if winner <= int(pobeda) and int(pobeda) != winner:
