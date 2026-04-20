@@ -1,0 +1,9 @@
+numbers = input("Введите числа через запятую и с нулем на конце: ")
+num = numbers.split(", ")
+summa_MAX = 0
+summa_MIN = 0
+num_sorted = sorted(num)
+summa_MAX = int(num_sorted[-1]) + int(num_sorted[-2])
+summa_MIN = int(num_sorted[1]) + int(num_sorted[2])
+print(summa_MAX)
+print(summa_MIN)
