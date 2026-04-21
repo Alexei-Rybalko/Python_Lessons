@@ -10,7 +10,7 @@ for pobeda in balls1:
         print("ERROR")
         winner = 0
         break
-    if int(pobeda) <= 1 and int(pobeda) != 1:
+    if int(pobeda) <= 0 and int(pobeda) != 0:
         print("ERROR")
         winner = 0
         break
@@ -32,6 +32,8 @@ for debil in balls1:
 #Вывод результатов
 if winner != 0:
     print(winner)
-if winner != 0:
-    print(debil_est)
+if winner != 0 and debil_est == True:
+    print("YES")
+if winner != 0 and debil_est == False:
+    print("NO")
         
