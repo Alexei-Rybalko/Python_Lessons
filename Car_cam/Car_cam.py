@@ -13,14 +13,13 @@ for speeds in speed1:
         Oshibka = True
         break
     if int(speeds) > Max:
-        Max = 0
-        Max += int(speeds)
+        Max = int(speeds)
     if int(speeds) < Min:
-        Min = 0
-        Min += int(speeds)
-for norm in speed1:
-    if int(norm) < 30:
-        speed_no_30 + 1
+        Min = int(speeds)
+if Oshibka != True:
+    for norm in speed1:
+        if int(norm) <= 30:
+            speed_no_30 += 1
 if Oshibka != True:
     print(Max - Min)
     print(speed_no_30)
